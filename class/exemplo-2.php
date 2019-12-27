@@ -17,7 +17,7 @@
     $this->modelo = $modelo;
     
   }
-  public function getMotor(){
+  public function getMotor():float{
 
     return $this->motor;
     
@@ -27,7 +27,7 @@
     $this->motor = $motor;
     
   }
-  public function getAno(){
+  public function getAno():int{
 
     return $this->ano;
     
@@ -60,7 +60,7 @@ echo $golf->getModelo();
 echo "<br>";
 echo "<pre>";
 // estamos dando um print r pq o método retorna um array
-print_r($golf->exibir());
+var_dump($golf->exibir());
 echo "</pre>";
 
 
