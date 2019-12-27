@@ -12,7 +12,6 @@ class Pessoa{
         return "O meu nome é ".$this->nome;
     }
 
-
 }
 
 $bruno = new Pessoa();
