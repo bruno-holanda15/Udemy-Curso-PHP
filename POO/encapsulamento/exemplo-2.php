@@ -15,14 +15,22 @@
 
  }
 
- $encap = new Pessoa();
+ class Programador extends Pessoa{
+
+    public function verDados(){
+
+        echo get_class($this) . "<br>";
+        echo $this->nome."<br>";
+        echo $this->idade."<br>";
+        echo $this->senha."<br>";
+
+    }
+   
+ }
+
+ $encap = new Programador();
  $encap->verDados();
 
  echo $encap->nome;
  echo "<br>";
- // consegue ver com métodos, e as classes filhas tem acesso , pois a mesma é protected e não private
- echo $encap->idade;
- echo "<br>";
- // o atributo privado nem mesmo as classes herdeiras conseguem acessar o método ,só a propria classe
- echo $encap->senha;
 
